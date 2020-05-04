@@ -1,0 +1,33 @@
+{
+  "name": "Order_NodeJS",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "11.x.x"
+  },
+  "scripts": {
+    "dev": "supervisor --watch src/private --ignore --timestamp -V src/private/server.js",
+    "start": "node ./build/private/server.js",
+    "gulp": "gulp"
+  },
+  "dependencies": {
+    "blueimp-md5": "^2.11.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-ejs": "^1.0.3",
+    "gulp-uglify": "^3.0.2",
+    "pump": "^3.0.0",
+    "supervisor": "^0.12.0"
+  }
+}
